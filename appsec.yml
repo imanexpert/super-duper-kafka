@@ -3,7 +3,3 @@ os: linux
 files:
   - source: /
     destination: /var/www/my-app/
-hooks:
-  BeforeInstall:
-    - location: scripts/dependencies_install.sh
-      runas: ubuntu
