@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /super-duper-kafka
+    destination: /var/www/html/my-app
+permissions:
+  - object: /var/www/my-app/
+    pattern: “**”
+    owner: ubuntu
+    group: ubuntu
+    mode: 775
