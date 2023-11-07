@@ -3,11 +3,6 @@ os: linux
 files:
   - source: /
     destination: /var/www/my-app/
-  - object: /var/www/my-app/
-    pattern: “**”
-    owner: ubuntu
-    group: ubuntu
-    mode: 775
 hooks:
   BeforeInstall:
     - location: scripts/dependencies_install.sh
