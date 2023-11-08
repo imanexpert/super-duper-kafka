@@ -5,6 +5,7 @@ apt update
 apt install yarn
 
 apt install rails
+gem install bundler — user-install
 bundle install
 yarn install
 # Create db
