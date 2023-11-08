@@ -6,9 +6,9 @@ sudo apt-get update
 sudo apt-get -y install ruby ruby-dev
 sudo gem install bundler
 sudo gem install rails 
+sudo gem install karafka
 sudo apt-get -y install yarn
 sudo apt-get -y update
-sudo bundle add karafka
 # sudo bundle add karafka-web
 # docker-compose up -d
 # sudo bundle install
