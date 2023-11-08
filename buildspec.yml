@@ -11,7 +11,6 @@ phases:
       - exec bash
       - gem update --system
       - echo Installing Bundler...
-      - rm -r /root/.rbenv/versions/2.5.3/bin/bundle
       - gem install bundler
       - bundle install
       - echo Installing node dependencies
