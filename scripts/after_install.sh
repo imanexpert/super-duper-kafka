@@ -1,5 +1,5 @@
-sudo bundle install
-sudo yarn install
+bundle install
+yarn install
 # Create db
 bundle exec rake db:create
 bundle exec rails db:migrate
