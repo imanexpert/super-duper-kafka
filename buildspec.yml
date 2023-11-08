@@ -10,7 +10,6 @@ phases:
       - source ~/.bashrc
       - sudo rbenv -y install 3.2.2
       - sudo rbenv global 3.2.2
-      - echo "gem: --no-document" > ~/.gemrc
       - gem install bundler
       - gem install rails
       - rbenv rehash
