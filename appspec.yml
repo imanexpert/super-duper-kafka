@@ -3,3 +3,12 @@ os: linux
 files:
   - source: /application
     destination: /home/ubuntu
+hooks:
+  BeforeInstall:
+    - location: scripts/install_docker.sh
+      runas: ubuntu
+    - location: scripts/install_postgres.sh
+      runas: ubuntu
+  AfterInstall:
+    - location: scripts/install_rails.sh
+      runas: ubuntu
