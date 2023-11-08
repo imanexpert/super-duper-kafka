@@ -5,10 +5,10 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update
 sudo apt-get -y install ruby ruby-dev
 gem install bundler
-sudo gem install rails 
-sudo gem install karafka
-sudo gem install pg
-sudo gem install puma
-sudo gem install karafka-web
+gem install rails 
+gem install karafka
+gem install pg
+gem install puma
+gem install karafka-web
 sudo apt-get -y install yarn
 sudo apt-get -y update
