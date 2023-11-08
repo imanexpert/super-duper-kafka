@@ -12,6 +12,3 @@ sudo gem install puma
 sudo gem install karafka-web
 sudo apt-get -y install yarn
 sudo apt-get -y update
-
-sudo bundle install
-sudo yarn install
