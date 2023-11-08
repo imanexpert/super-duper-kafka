@@ -4,8 +4,8 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update
 sudo apt-get install yarn
 
-sudo apt-get install rails
 sudo apt-get update
+sudo gem install rails
 sudo gem install bundler — user-install
 sudo bundle install
 sudo yarn install
