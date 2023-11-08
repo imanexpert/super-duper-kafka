@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cd ~
-# Install all the dependencies
+# Install all the dependencie
 sudo bundle install
 sudo yarn install
 # Create db
