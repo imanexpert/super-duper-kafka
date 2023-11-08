@@ -2,30 +2,17 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      ruby: 3.2 #remove the .3 if there are errors here
-      nodejs: 18
+        ruby: 3.2
     commands:
-      - apt update
-      - apt install git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev -y
-      - ruby -v
-      - exec bash
-      - gem update --system
       - echo Installing Bundler...
       - gem install bundler
       - bundle install
-      - echo Installing node dependencies
-      - yarn install
-      - apt -y install postgresql postgresql-server postgresql-devel postgresql-contrib postgresql-docs
   pre_build:
     commands:
-      - cp config/database.yml.example config/database.yml
-      - sed -i "s|5432|5434|" "config/database.yml"
       - echo Preparing database to run tests...
-      - service postgresql restart
-      - RAILS_ENV=test bundle exec rake db:setup    #was db:create
-      - RAILS_ENV=test bundle exec rake parallel:create
-      - RAILS_ENV=test bundle exec rake parallel:prepared
+      - RAILS_ENV=test rails db:setup
+      - RAILS_ENV=test rails db:migrate
   build:
     commands:
-      - echo Codeship Parallel Rspec Test Commands...
-      - RAILS_ENV=test bundle exec parallel_rspec spec --single 'spec/features' --isolate --test-options "--order=random"
+      - echo Running tests...
+      - rails test
