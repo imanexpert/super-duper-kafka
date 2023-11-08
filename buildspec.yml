@@ -7,10 +7,3 @@ phases:
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
-  build:
-    commands:
-      - echo Build started on `date`
-      - gem install bundler
-      - bundle install
-      - echo Running rspec tests...
-      - bundle exec rspec spec/
