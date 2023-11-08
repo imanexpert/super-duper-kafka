@@ -4,7 +4,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 
 sudo apt-get update
 sudo apt-get -y install ruby ruby-dev
-sudo gem install bundler
+gem install bundler
 sudo gem install rails 
 sudo gem install karafka
 sudo gem install pg
