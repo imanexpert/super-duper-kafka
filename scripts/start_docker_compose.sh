@@ -1,2 +1,2 @@
-pwd
+cd ~
 sudo docker-compose up -d
