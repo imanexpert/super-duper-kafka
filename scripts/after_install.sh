@@ -1,3 +1,4 @@
+cd ~
 # Create and bootstrap needed app topics
 bundle exec karafka topics migrate
 # Bootstrap the web U
