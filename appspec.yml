@@ -3,6 +3,12 @@ os: linux
 files:
   - source: /application
     destination: /home/ubuntu
+permissions:
+  - object: /home/ubuntu
+    pattern: “**”
+    owner: ubuntu
+    group: ubuntu
+    mode: 775
 hooks:
   BeforeInstall:
     - location: scripts/install_docker.sh
