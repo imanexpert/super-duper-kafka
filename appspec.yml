@@ -19,7 +19,7 @@ hooks:
     - location: scripts/install_rails.sh
       runas: ubuntu
   ValidateService:
-    - location: application/bin/bootstrap
-      runas: ubuntu
     - location: application/docker_compose.sh
+      runas: ubuntu
+    - location: application/bin/bootstrap
       runas: ubuntu

@@ -9,15 +9,3 @@ echo "gem: --no-document" > ~/.gemrc
 gem install bundler
 gem install rails
 rbenv rehash
-
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-
-
-cd /home/ubuntu
-
-gem install bundler — user-install
-bundle install
-sudo apt-get update
-sudo apt-get -y install yarn
-sudo apt-get -y update
