@@ -20,4 +20,4 @@ hooks:
       runas: ubuntu
   ValidateService:
     - location: application/bin/bootstrap
-      runas: unbuntu
+      runas: ubuntu
