@@ -5,6 +5,7 @@ phases:
         ruby: 3.2
     commands:
       - echo Installing Bundler...
+      - gem update --system
       - gem install bundler
       - bundle install
   pre_build:
