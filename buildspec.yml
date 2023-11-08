@@ -11,5 +11,6 @@ phases:
     commands:
       - echo Build started on `date`
       - gem install bundler
+      - bundle install
       - echo Running rspec tests...
       - bundle exec rspec spec/
