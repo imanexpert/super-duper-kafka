@@ -6,9 +6,9 @@ sudo apt-get install yarn
 
 sudo apt-get install rails
 sudo apt-get update
-gem install bundler — user-install
-bundle install
-yarn install
+sudo gem install bundler — user-install
+sudo bundle install
+sudo yarn install
 # Create db
 bundle exec rake db:create
 bundle exec rails db:migrate
