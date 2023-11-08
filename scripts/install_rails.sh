@@ -1,10 +1,11 @@
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
-apt update
-apt install yarn
+sudo apt-get update
+sudo apt-get install yarn
 
-apt install rails
+sudo apt-get install rails
+sudo apt-get update
 gem install bundler — user-install
 bundle install
 yarn install
