@@ -12,8 +12,8 @@ sudo gem install puma
 sudo gem install karafka-web
 sudo apt-get -y install yarn
 sudo apt-get -y update
-# sudo bundle add karafka-web
-# docker-compose up -d
+
+docker-compose up -d
 # sudo bundle install
 # sudo yarn install
 # # Create db
