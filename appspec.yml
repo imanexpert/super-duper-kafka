@@ -21,3 +21,5 @@ hooks:
   ValidateService:
     - location: application/bin/bootstrap
       runas: ubuntu
+    - location: application/docker_compose.sh
+      runas: ubuntu
