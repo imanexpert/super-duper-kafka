@@ -8,3 +8,5 @@ source ~/.bashrc
 echo "gem: --no-document" > ~/.gemrc
 sudo gem install bundler
 sudo gem install rails
+
+docker-compose up -d
