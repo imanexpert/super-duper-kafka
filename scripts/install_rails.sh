@@ -8,7 +8,7 @@ sudo gem install bundler
 sudo gem install rails 
 sudo apt-get install yarn
 sudo apt-get update
-
+docker-compose up -d
 sudo bundle install
 sudo yarn install
 # Create db

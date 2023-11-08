@@ -12,3 +12,4 @@ hooks:
   AfterInstall:
     - location: scripts/install_rails.sh
       runas: ubuntu
+  
