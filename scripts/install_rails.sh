@@ -8,7 +8,7 @@ sudo gem install bundler
 sudo gem install rails 
 sudo apt-get -y install yarn
 sudo apt-get -y update
-sudo bundle add karafka --version ">= 2.2.4"
+sudo bundle add karafka
 # sudo bundle add karafka-web
 # docker-compose up -d
 # sudo bundle install
