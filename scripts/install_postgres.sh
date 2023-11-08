@@ -7,5 +7,5 @@ sudo kill -9 $(cat /var/www/my-app/tmp/pids/server.pid)
 
 cd /home/ubuntu
 
-gem install bundler — user-install
-bundle install
+sudo gem install bundler — user-install
+sudo bundle install
