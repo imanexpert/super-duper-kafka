@@ -6,5 +6,5 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 
 echo "gem: --no-document" > ~/.gemrc
-gem install bundler
-gem install rails
+sudo gem install bundler
+sudo gem install rails
