@@ -2,7 +2,6 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: openjdk8vv
       ruby: 2.6 #remove the .3 if there are errors here
       nodejs: 18
     commands:
