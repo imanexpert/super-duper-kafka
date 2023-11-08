@@ -6,6 +6,7 @@ phases:
     commands:
       - echo Installing Bundler...
       - gem update --system
+      - apt install ruby-dev
       - gem install bundler
       - bundle install
   pre_build:
