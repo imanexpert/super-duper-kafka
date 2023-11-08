@@ -4,9 +4,9 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
-rbenv -y install 3.2.2
-rbenv global 2.7.6
+sudo rbenv -y install 3.2.2
+sudo rbenv global 2.7.6
 echo "gem: --no-document" > ~/.gemrc
 gem install bundler
 gem install rails
-rbenv rehash
+sudo rbenv rehash
