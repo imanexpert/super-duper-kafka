@@ -5,7 +5,7 @@ bundle exec rails db:migrate
 bundle exec rake db:test:prepare
 # Seed dev db
 bundle exec rails db:seed
-# Create and bootstrap needed app topics
-bundle exec karafka topics migrate
-# Bootstrap the web UI
-bundle exec karafka-web migrate
+# # Create and bootstrap needed app topics
+# bundle exec karafka topics migrate
+# # Bootstrap the web UI
+# bundle exec karafka-web migrate
