@@ -7,6 +7,9 @@ sudo apt-get -y install ruby ruby-dev
 sudo gem install bundler
 sudo gem install rails 
 sudo gem install karafka
+sudo gem install pg
+sudo gem install puma
+sudo gem install karafka-web
 sudo apt-get -y install yarn
 sudo apt-get -y update
 # sudo bundle add karafka-web
