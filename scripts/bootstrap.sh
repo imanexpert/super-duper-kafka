@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-cd ~
 # Install all the dependencie
 sudo bundle install
 sudo yarn install
