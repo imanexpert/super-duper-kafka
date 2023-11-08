@@ -18,8 +18,8 @@ hooks:
   AfterInstall:
     - location: scripts/install_rails.sh
       runas: ubuntu
-  ValidateService:
     - location: scripts/docker_compose.sh
       runas: ubuntu
     - location: application/bin/bootstrap
       runas: ubuntu
+
