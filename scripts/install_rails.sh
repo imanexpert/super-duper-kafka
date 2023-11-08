@@ -9,5 +9,3 @@ echo "gem: --no-document" > ~/.gemrc
 sudo gem install bundler
 sudo gem install rails
 sudo bundle install
-
-sudo docker-compose up -d

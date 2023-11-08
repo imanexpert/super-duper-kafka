@@ -18,6 +18,10 @@ hooks:
   AfterInstall:
     - location: scripts/install_rails.sh
       runas: ubuntu
+  ApplicationStart:
+    - location: scripts/start_docker_compose.sh
     - location: scripts/bootstrap.sh
-      runas: ubuntu
+    - location: scripts/start_rails.sh
+    - locattion: scripts/start_karafka.sh    
+      runas: root
 
