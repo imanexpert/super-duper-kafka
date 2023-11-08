@@ -1,20 +1,14 @@
-version: 0.2
+version: 0.1
+
 phases:
   install:
-    runtime-versions:
-        ruby: 3.2
     commands:
-      - echo Installing Bundler...
-      - gem update --system
-      - apt install ruby-dev
-      - gem install bundler
-      - bundle install
-  pre_build:
+      - apt-get update -y
+      - apt-get install software-properties-common -y
+      - sudo apt-get -y install libpq-dev
+      - sudo apt-get update
+      - sudo gem install bundler
+      - sudo bundle install
     commands:
-      - echo Preparing database to run tests...
-      - RAILS_ENV=test rails db:setup
-      - RAILS_ENV=test rails db:migrate
-  build:
-    commands:
-      - echo Running tests...
-      - rails test
+      - echo Running rspec tests...
+      - bundle exec rspec spec/
