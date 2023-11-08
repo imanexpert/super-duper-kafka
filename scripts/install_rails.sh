@@ -3,12 +3,12 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 
 
 sudo apt-get update
-sudo apt install ruby-dev
+sudo apt-get install ruby ruby-dev
+sudo gem install bundler
 sudo gem install rails 
 sudo apt-get install yarn
 sudo apt-get update
 
-sudo gem install bundler — user-install
 sudo bundle install
 sudo yarn install
 # Create db
