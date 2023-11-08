@@ -4,7 +4,7 @@ phases:
     runtime-versions:
       java: openjdk8vv
       ruby: 2.6 #remove the .3 if there are errors here
-      nodejs: 8
+      nodejs: 18
     commands:
       - apt update
       - apt install git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev -y
